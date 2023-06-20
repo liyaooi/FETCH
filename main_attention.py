@@ -15,7 +15,7 @@ if __name__ == '__main__':
     file_name = "airfoil"
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cuda', type=str, default="3", help='which gpu to use')
+    parser.add_argument('--cuda', type=str, default="0", help='which gpu to use')
     # parser.add_argument('--cuda', type=str, default="False", help='which gpu to use')
     parser.add_argument("--train_size", type=float, default=0.7)
 

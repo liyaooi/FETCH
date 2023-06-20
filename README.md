@@ -10,7 +10,7 @@ Data can be accessed through URL in the paper.
 
 ## How to run it
 
-`requirements.txt`: install needed packages under the environment settings by pip.
+`pip install -r requirements.txt`: install needed packages under the environment settings by pip.
 
 `python main_attention.py`: after specifying the dataset, cuda, and other parameters, you can run FETCH to automate feature engineering for Random Forest or other pre-defined model.
 
@@ -23,6 +23,22 @@ Data can be accessed through URL in the paper.
 `. run_diff_models.sh`: run Experiment 4.4 and C.5 on different models.
 
 `. run_table_5.sh`: run Experiment C.6.
+
+## Environment
+The code in this repository is designed and highly recommended to be run on `Ubuntu 20.04` or other Linux systems.
+
+> Note that running the code with multiple processes (`args.worker > 1`) on `Windows` may encounter issues with variable sharing. 
+> If you are using `Windows`, consider setting up a Linux environment (e.g., using a virtual machine or WSL) to run the code.
+
+## Citation
+```
+@inproceedings{li2023learning,
+  title={Learning a Data-Driven Policy Network for Pre-Training Automated Feature Engineering},
+  author={Li, Liyao and Wang, Haobo and Zha, Liangyu and Huang, Qingyi and Wu, Sai and Chen, Gang and Zhao, Junbo},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+```
 
 ## Reference Code
 
